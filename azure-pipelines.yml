@@ -130,7 +130,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'CINQ ICT'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               deployToSlotOrASE: 'true'
               resourceGroupName: 'Luuk-Test-RG'
               slotName: 'swap'
@@ -139,7 +139,7 @@ stages:
           - task: AzureAppServiceManage@0
             displayName: 'Swap deployment slots'
             inputs:
-              azureSubscription: 'CINQ ICT'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               resourceGroupName: 'Luuk-Test-RG'
               webAppName: '$(WebAppNameStaging)'
               sourceSlot: 'swap'
